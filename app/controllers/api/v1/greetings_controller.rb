@@ -4,7 +4,7 @@ class Api::V1::GreetingsController < ApplicationController
     if @greeting
       render json: @greeting
     else
-      render json: {status: {code: 422, message: 'No greetings found'}}, status: :unprocessable_entity
+      render json: { status: { code: 422, message: 'No greetings found' } }, status: :unprocessable_entity
     end
   end
 end
